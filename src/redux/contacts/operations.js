@@ -14,7 +14,6 @@ export const fetchContacts = createAsyncThunk(
     },
 );
 
-
 export const submit = createAsyncThunk(
     'addContact',
     async (contact, { rejectWithValue }) => {

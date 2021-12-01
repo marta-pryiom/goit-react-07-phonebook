@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
-import { items, filter } from './contacts/reducers';
+import { items, filter, error } from './contacts/reducers';
 import {
     // persistStore,
     // persistReducer,
@@ -14,7 +14,7 @@ import {
 
 import logger from 'redux-logger';
 
-const rootReducer = combineReducers({ items, filter });
+const rootReducer = combineReducers({ items, filter, error });
 
 export const store = configureStore({
     reducer: {
